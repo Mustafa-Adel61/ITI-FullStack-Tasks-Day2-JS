@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+     
+    <p id="currentDate" style="display: none;background-color: aqua;" ></p>
+    <p id="UserData" style="display: none;background-color: aqua;" ></p>
+    <!-- same full name regular expression with input (Use pattern attribute, without using JavaScript code). -->
+    
+    <form action="./second.html">
+        <label for="userName">Enter Your Full Name</label>
+        <input type="text"id="userName" pattern="([A-Za-z]{3,})( [A-Za-z]{3,})*" title="Enter a valid full name (each word must have at least 3 letters)">
+        <input type="submit">
+        
+    </form>
+   
+   
+    <button style="display: block;background-color: bisque;" onclick="myDate()" >Click for current date and time </button>
+    <button style="display: block;background-color: bisque;" onclick="email()" >Click for Email</button>
+    <button style="display: block;background-color: bisque;" onclick="regexNameEmail()" >Enter Full Name and Email</button>
+    <button style="display: block;background-color: bisque;" onclick="UserBirthDay()" >BirthDay</button>
+    <script src="./scipr.js"></script>
+</body>
+</html>
